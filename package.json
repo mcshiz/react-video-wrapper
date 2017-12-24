@@ -1,34 +1,8 @@
 {
   "name": "react-video-wrapper",
-  "version": "0.0.1",
-  "description": "react 16 videojs wrapper",
+  "version": "1.0.0",
+  "description": "React Video Wrapper works for react 16",
   "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server -c --port=7788",
-    "build": "babel src --out-dir dist && webpack -p",
-    "deploy": "npm run build && github-pages-deploy",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mcshiz/react-video-wrapper.git"
-  },
-  "peerDependencies": {
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1"
-  },
-  "keywords": [
-    "react-component",
-    "videojs",
-    "video",
-    "react"
-  ],
-  "author": "Brian McCall",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/esportsguy/react-videojs/issues"
-  },
-  "homepage": "https://github.com/mcshiz/react-video-wrapper.git#readme",
   "dependencies": {
     "blacklist": "^1.1.2",
     "classnames": "^2.2.0",
@@ -42,5 +16,24 @@
     "github-pages-deploy": "0.0.3",
     "json-loader": "^0.5.3",
     "webpack": "^1.12.8"
-  }
+  },
+  "scripts": {
+    "start": "webpack-dev-server -c --port=7788",
+    "build": "babel src --out-dir dist && webpack -p",
+    "deploy": "npm run build && github-pages-deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcshiz/react-video-wrapper.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "mcshiz <brianmccall88@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcshiz/react-video-wrapper/issues"
+  },
+  "homepage": "https://github.com/mcshiz/react-video-wrapper#readme"
 }
