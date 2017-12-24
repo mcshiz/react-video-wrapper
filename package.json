@@ -1,6 +1,6 @@
 {
   "name": "react-video-wrapper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Video Wrapper works for react 16",
   "main": "index.js",
   "dependencies": {
