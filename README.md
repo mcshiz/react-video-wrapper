@@ -23,4 +23,4 @@ Video.js should be loaded globally.
 ```
 
 ### License
-MIT
+ISC
