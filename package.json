@@ -5,8 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "blacklist": "^1.1.2",
-    "classnames": "^2.2.0",
-    "prop-types": "^15.6.0"
+    "classnames": "^2.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.2.1",

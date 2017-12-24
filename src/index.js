@@ -1,9 +1,8 @@
 import cx from 'classnames';
 import blacklist from 'blacklist';
 import React from 'react';
-import propTypes from 'prop-types'
 
-export default class VideoJs extends React.Component {
+class VideoWrapper extends React.Component {
 
     componentDidMount() {
         let self = this;
@@ -37,8 +36,6 @@ export default class VideoJs extends React.Component {
     }
 }
 
-VideoJs.propTypes = {
-
-}
 
 
+export default VideoWrapper
