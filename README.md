@@ -3,11 +3,8 @@ react videojs wrapper
 
 ### Installtion
 ``` sh
-npm install react-videojs --save
+npm install react-video-wrapper --save
 ```
-
-### Demo
-http://esportsguy.github.io/react-videojs/
 
 ### Usage
 
@@ -26,4 +23,4 @@ Video.js should be loaded globally.
 ```
 
 ### License
-ISC
+MIT

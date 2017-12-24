@@ -1,39 +1,44 @@
-var assign = require('object-assign');
-var cx = require('classnames');
-var blacklist = require('blacklist');
-var React = require('react');
+import cx from 'classnames';
+import blacklist from 'blacklist';
+import React from 'react';
+import propTypes from 'prop-types'
 
-module.exports = React.createClass({
-  displayName: 'VideoJS',
+export default class VideoJs extends React.Component {
 
-  componentDidMount() {
-    var self = this;
-    var player = videojs(this.refs.video, this.props.options).ready(function() {
-      self.player = this
-      self.player.on('play', self.handlePlay);
-    });
-    if(this.props.onPlayerInit) this.props.onPlayerInit(player);
-  },
+    componentDidMount() {
+        let self = this;
+        let player = videojs(this.refs.video, this.props.options).ready(function() {
+            self.player = this;
+            self.player.on('play', self.handlePlay);
+        });
+        if(this.props.onPlayerInit) this.props.onPlayerInit(player);
+    }
 
-  handlePlay: function() {
-    if(this.props.onPlay) this.props.onPlay(this.player);
-  },
+    handlePlay() {
+        if(this.props.onPlay) this.props.onPlay(this.player);
+    };
 
-  render() {
-    var props = blacklist(this.props, 'children', 'className', 'src', 'type', 'onPlay', 'onPlayerInit');
-    props.className = cx(this.props.className, 'videojs', 'video-js vjs-default-skin');
+    render() {
+        let props = blacklist(this.props, 'children', 'className', 'src', 'type', 'onPlay', 'onPlayerInit');
+        props.className = cx(this.props.className, 'videojs', 'video-js vjs-default-skin');
 
-    assign(props, {
-      ref: 'video',
-      controls: true
-    });
+        Object.assign(props, {
+            ref: 'video',
+            controls: true
+        });
 
-    return (
-      <div>
-        <video {... props}>
-          <source src={this.props.src} type={this.props.type}/>
-        </video>
-      </div>
-    )
-  }
-});
+        return (
+            <div>
+                <video {... props}>
+                    <source src={this.props.src} type={this.props.type}/>
+                </video>
+            </div>
+        )
+    }
+}
+
+VideoJs.propTypes = {
+
+}
+
+

@@ -1,7 +1,7 @@
 {
-  "name": "react-videojs",
-  "version": "0.0.3",
-  "description": "react videojs wrapper",
+  "name": "react-video-wrapper",
+  "version": "0.0.1",
+  "description": "react 16 videojs wrapper",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server -c --port=7788",
@@ -9,16 +9,13 @@
     "deploy": "npm run build && github-pages-deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "github-pages-deploy": {
-    "src": "example"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/esportsguy/react-videojs.git"
+    "url": "git+https://github.com/mcshiz/react-video-wrapper.git"
   },
   "peerDependencies": {
-    "react": "^0.14.0",
-    "react-dom": "^0.14.0"
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
   },
   "keywords": [
     "react-component",
@@ -26,16 +23,16 @@
     "video",
     "react"
   ],
-  "author": "Wang Zuo",
-  "license": "ISC",
+  "author": "Brian McCall",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/esportsguy/react-videojs/issues"
   },
-  "homepage": "https://github.com/esportsguy/react-videojs#readme",
+  "homepage": "https://github.com/mcshiz/react-video-wrapper.git#readme",
   "dependencies": {
     "blacklist": "^1.1.2",
     "classnames": "^2.2.0",
-    "object-assign": "^4.0.1"
+    "prop-types": "^15.6.0"
   },
   "devDependencies": {
     "babel-core": "^6.2.1",
