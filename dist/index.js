@@ -29,10 +29,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var VideoWrapper = function (_React$Component) {
     _inherits(VideoWrapper, _React$Component);
 
-    function VideoWrapper() {
+    function VideoWrapper(props) {
         _classCallCheck(this, VideoWrapper);
 
-        return _possibleConstructorReturn(this, (VideoWrapper.__proto__ || Object.getPrototypeOf(VideoWrapper)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (VideoWrapper.__proto__ || Object.getPrototypeOf(VideoWrapper)).call(this, props));
+
+        _this.handlePlay = _this.handlePlay.bind(_this);
+        return _this;
     }
 
     _createClass(VideoWrapper, [{
