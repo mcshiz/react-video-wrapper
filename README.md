@@ -1,5 +1,5 @@
-# react-videojs
-react videojs wrapper
+# react-video-wrapper
+react video wrapper
 
 ### Installtion
 ``` sh
